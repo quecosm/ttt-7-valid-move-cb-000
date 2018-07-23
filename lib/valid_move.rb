@@ -18,4 +18,4 @@ def position_taken?(board, choice)
   taken = true
   end
 end
-  taken
+  

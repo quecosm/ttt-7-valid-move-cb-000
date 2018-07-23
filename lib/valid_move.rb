@@ -17,4 +17,5 @@ def position_taken?(board, choice)
   else
   taken = true
   end
+end
   taken

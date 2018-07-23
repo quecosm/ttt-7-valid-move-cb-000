@@ -11,6 +11,7 @@ def valid_move? (board, index)
     return true
     end
     
-  def on_board? ()
+  def on_board? (ind)
+    if ind.between (0,8)
 end
   

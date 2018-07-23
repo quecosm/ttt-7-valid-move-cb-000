@@ -1,28 +1,29 @@
 # code your #valid_move? method here
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-def valid_move?(board, index)
+def valid_move? (board, index)
+  
   def position_taken?(array, ind)
-    if array[ind] == " " || array[ind] == "" || array[ind] == nil
-      return false
+        
+    if (board[ind] ==  " " || board[ind] == "" || board[ind] == nil)
+    return false
     else
-      return true
+    return true
     end
   end
-
-  def on_board?(num)
+    
+  def on_board? (num)
     if num.between?(0, 8) == true
       return true
     else
       return false
     end
   end
-
-  if (position_taken?(board, index)) == false && (on_board?(index) == true)
+    
+  if position_taken? == false && on_board(ind) == true
     return true
   else
     return false
   end
-
-
 end
+  

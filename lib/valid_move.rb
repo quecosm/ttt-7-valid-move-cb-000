@@ -6,9 +6,11 @@ def valid_move? (board, index)
   def position_taken?(array, ind)
         
     if (board[index] ==  " " || board[index] == "" || board[index] == nil)
-    taken = false
+    return false
     else
-    taken = true
+    return true
     end
+    
+  def on_board? ()
 end
   

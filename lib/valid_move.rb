@@ -2,10 +2,9 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def valid_move? (board, index)
-
+  ind = index.to_i - 1
   def position_taken?(array, ind)
-    ind = index.to_i - 1
-    taken = nil
+        taken = nil
     if (board[index] ==  " " || board[index] == "" || board[index] == nil)
     taken = false
     else

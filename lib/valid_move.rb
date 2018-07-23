@@ -3,7 +3,7 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def valid_move? (board, index)
 
-  def position_taken?(board, choice)
+  def position_taken?(array, ind)
     index = index.to_i - 1
     taken = nil
     if (board[index] ==  " " || board[index] == "" || board[index] == nil)
@@ -11,6 +11,5 @@ def valid_move? (board, index)
     else
     taken = true
     end
-  taken
 end
   
